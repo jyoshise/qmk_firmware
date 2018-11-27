@@ -52,17 +52,10 @@ enum macro_keycodes {
 #define KC_LSAD  RGB_SAD
 #define KC_LVAI  RGB_VAI
 #define KC_LVAD  RGB_VAD
-<<<<<<< HEAD
 #define KC_LSMOD RGB_MOD
 #define KC_CTLTB CTL_T(KC_TAB)
 #define KC_GUIEI GUI_T(KC_INT5)
 #define KC_ALTKN ALT_T(KC_INT4)
-=======
-#define KC_LSMOD RGB_SMOD
-#define KC_CTLTB CTL_T(KC_TAB)
-#define KC_GUIEI GUI_T(KC_LANG2)
-#define KC_ALTKN ALT_T(KC_LANG1)
->>>>>>> add crkbd keymap
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT_kc( \
@@ -80,6 +73,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_LOWER] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
 <<<<<<< HEAD
+<<<<<<< HEAD
         ESC,     1,     2,     3,     4,     5,                      6,     7,     8,     9,     0,  DEL,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
       CTLTB,    F1,    F2,    F3,    F4,    F5,                     F6,    F7,    F8,    F9,   F10, XXXXX,\
@@ -92,6 +86,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LSFT,   F11,   F12,   F13,   F14,   F15,                    F16,   F17,   F18,   F19,   F20, XXXXX,\
 >>>>>>> add crkbd keymap
+=======
+        ESC,     1,     2,     3,     4,     5,                      6,     7,     8,     9,     0,  DEL,\
+  //|------+------+------+------+------+------|                |------+------+------+------+------+------|
+      CTLTB,    F1,    F2,    F3,    F4,    F5,                     F6,    F7,    F8,    F9,   F10, XXXXX,\
+  //|------+------+------+------+------+------|                |------+------+------+------+------+------|
+       LSFT,   F11,   F12,   F13,   F14,   F15,                    F16,   F17,  COMM,   DOT,  SLSH,  RSFT,\
+>>>>>>> modify helix similar to crkbd
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                   GUIEI, RAISE,   SPC,     ENT, LOWER, ALTKN \
                               //`--------------------'  `--------------------'
