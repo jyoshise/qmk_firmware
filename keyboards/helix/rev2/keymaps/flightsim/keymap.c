@@ -66,14 +66,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
    * |RAlt+-|RAlt+=|LAlt+6|LAlt+2|   7  |   3  |             |   N  |   M  |   ,  |   .  |   /  |Enter |
    * |------+------+------+------+------+------+-------------+------+------+------+------+------+------|
-   * |RCtl+-|RCtl-=|LSft+A|LAlt+3|   8  |   4  | Mode2|Space |Raise | KANA | Left | Down |  Up  |Right |
+   * |RCtl+-|RCtl-=|LSft+A|LAlt+3|   8  |   4  | Mode2|Space |      |       | Left | Down |  Up  |Right |
    * `-------------------------------------------------------------------------------------------------'
    */
   [_MODE1] = LAYOUT( \
       KC_I,    LALT9,   LALT4,   KC_A,    KC_5,    KC_1,                      KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
       RALTI,   RSFTI,   LALT5,   LALT1,   KC_6,    KC_2,                      KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
       RALTMIN, RALTEQ,  LALT6,   LALT2,   KC_7,    KC_8,                      KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT , \
-      RCTLMIN, RCTLEQ,  LSFTA,   LALT3,   KC_8,    KC_4,   MODE2,  KC_SPC,  RAISE,   KANA,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT \
+      RCTLMIN, RCTLEQ,  LSFTA,   LALT3,   KC_8,    KC_4,   MODE2,  KC_SPC,  ,   ,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT \
       ),
 
    /* MODE2
@@ -84,14 +84,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------|             |------+------+------+------+------+------|
    * |RAlt+-|RAlt+=|LAlt+6|LAlt+2|   7  |   3  |             |   N  |   M  |   ,  |   .  |   /  |Enter |
    * |------+------+------+------+------+------+-------------+------+------+------+------+------+------|
-   * |RCtl+-|RCtl-=|LSft+A|LAlt+3|   8  |   4  | Mode1|Space |Raise | KANA | Left | Down |  Up  |Right |
+   * |RCtl+-|RCtl-=|LSft+A|LAlt+3|   8  |   4  | Mode1|Space |      |      | Left | Down |  Up  |Right |
    * `-------------------------------------------------------------------------------------------------'
    */
   [_MODE2] = LAYOUT( \
       KC_I,    LALT9,   LALT4,   KC_A,    KC_5,    KC_1,                      KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
       RALTI,   RSFTI,   LALT5,   LALT1,   KC_6,    KC_2,                      KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
       RALTMIN, RALTEQ,  LALT6,   LALT2,   KC_7,    KC_8,                      KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT , \
-      RCTLMIN, RCTLEQ,  LSFTA,   LALT3,   KC_8,    KC_4,   MODE1,  KC_SPC,  RAISE,   KANA,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT \
+      RCTLMIN, RCTLEQ,  LSFTA,   LALT3,   KC_8,    KC_4,   MODE1,  KC_SPC,  ,   ,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT \
       )
 };
 
