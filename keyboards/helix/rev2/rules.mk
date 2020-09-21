@@ -1,7 +1,7 @@
 KEYBOARD_LOCAL_FEATURES_MK := $(dir $(lastword $(MAKEFILE_LIST)))local_features.mk
 
 # Helix Spacific Build Options default values
-HELIX_ROWS = yes              # Helix Rows is 4 or 5
+HELIX_ROWS = 4              # Helix Rows is 4 or 5
 OLED_ENABLE = no            # OLED_ENABLE
 LOCAL_GLCDFONT = no         # use each keymaps "helixfont.h" insted of "common/glcdfont.c"
 LED_BACK_ENABLE = yes        # LED backlight (Enable WS2812 RGB underlight.)
